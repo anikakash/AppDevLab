@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/EditTextnum1ID"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/black"
+        android:hint="@string/editText1"
+        android:inputType="numberDecimal"
+        android:textCursorDrawable="@null"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/EditTextnum2ID"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:hint="@string/editText2"
+        android:inputType="numberDecimal"
+        android:backgroundTint="@color/black"
+        android:textCursorDrawable="@null"
+        />
+
+    <Button
+        android:id="@+id/sumButtonID"
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_sum" />
+
+    <Button
+        android:id="@+id/mulButtonID"
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_mul" />
+
+    <Button
+        android:id="@+id/divButtonID"
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_div" />
+
+
+    <TextView
+        android:id="@+id/ResultTextViewID"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+
+</LinearLayout>

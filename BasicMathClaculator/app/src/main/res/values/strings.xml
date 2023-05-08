@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FirstApp</string>
+    <string name="editText1">Enter Number One</string>
+    <string name="editText2">Enter Number Two</string>
+    <string name="btn_sum">SUM</string>
+    <string name="btn_mul">Multiplication</string>
+    <string name="btn_div">Division</string>
+    <string name="sum_ans">The sum is</string>
+
+</resources>
