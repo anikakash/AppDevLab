@@ -5,12 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="MissingDefaultResource">
 
     <EditText
         android:id="@+id/EditTextnum1ID"
         android:layout_width="200dp"
         android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="100dp"
         android:backgroundTint="@color/black"
         android:hint="@string/editText1"
         android:inputType="numberDecimal"
@@ -22,6 +25,8 @@
         android:id="@+id/EditTextnum2ID"
         android:layout_width="200dp"
         android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
         android:textSize="20sp"
         android:textStyle="bold"
         android:hint="@string/editText2"
@@ -30,32 +35,78 @@
         android:textCursorDrawable="@null"
         />
 
-    <Button
-        android:id="@+id/sumButtonID"
-        android:layout_width="226dp"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_sum" />
-
-    <Button
-        android:id="@+id/mulButtonID"
-        android:layout_width="226dp"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_mul" />
-
-    <Button
-        android:id="@+id/divButtonID"
-        android:layout_width="226dp"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_div" />
-
-
     <TextView
         android:id="@+id/ResultTextViewID"
+        android:layout_gravity="center"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:textSize="20sp"
         android:textStyle="bold"
         />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/sumButtonID"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:text="Addition"
+            android:backgroundTint="#E4E4E4"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:id="@+id/mulButtonID"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="10dp"
+            android:text="Multiply"
+            android:backgroundTint="#E4E4E4"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            tools:ignore="TextSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/divButtonID"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:text="DIVision"
+            android:backgroundTint="#E4E4E4"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:id="@+id/subButtonID"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="10dp"
+            android:text="Substract"
+            android:backgroundTint="#E4E4E4"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            tools:ignore="TextSizeCheck" />
+
+    </LinearLayout>
+
+
 
 
 </LinearLayout>

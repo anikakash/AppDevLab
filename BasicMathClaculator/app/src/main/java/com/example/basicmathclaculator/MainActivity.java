@@ -1,6 +1,7 @@
 package com.example.basicmathclaculator;
 
-//package com.example.firstapp;
+
+import static java.lang.Math.abs;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,7 +14,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private EditText editTextnum1, editTextnum2;
-    private Button sumbutton, mulbutton, divbutton;
+    private Button sumbutton, mulbutton, divbutton, subbutton;
     private TextView resultTextView;
 
     @SuppressLint("MissingInflatedId")
@@ -26,11 +27,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         sumbutton=findViewById(R.id.sumButtonID);
         mulbutton=findViewById((R.id.mulButtonID));
         divbutton=findViewById((R.id.divButtonID));
+        subbutton=findViewById(R.id.subButtonID);
         resultTextView=findViewById(R.id.ResultTextViewID);
 
         sumbutton.setOnClickListener(this);
         mulbutton.setOnClickListener(this);
         divbutton.setOnClickListener(this);
+        subbutton.setOnClickListener(this);
 
     }
 
@@ -46,11 +49,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         else if(view.getId()==R.id.mulButtonID){
             double result= number1*number2;
-            resultTextView.setText("Multiplication = "+result);
+            resultTextView.setText("result is: "+result);
         }
         else if(view.getId()==R.id.divButtonID){
             double result = number1/number2;
-            resultTextView.setText("Divison is: "+result);
+            resultTextView.setText("result is: "+result);
+        }else {
+            double result = abs(number1-number2);
+            resultTextView.setText("result is: "+result);
         }
 
 
